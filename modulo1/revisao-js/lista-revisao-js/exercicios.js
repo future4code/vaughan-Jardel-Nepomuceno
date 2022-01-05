@@ -142,16 +142,33 @@ function retornaPessoaAnonimizada(pessoa) {
 
 // EXERCÍCIO 13A
 function retornaPessoasAutorizadas(pessoas) {
-   
+   const pessoasAutorizadas = []
+   for(const pessoa of pessoas){
+       if(pessoa.altura >=1.5 && pessoa.idade > 14 && pessoa.idade <60)
+       pessoasAutorizadas.push(pessoa)
+    } 
+return pessoasAutorizadas
 }
+
 
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
-  
-}
-
+   
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
+    for(const conta of contas){
+        const compraTotal = 0
+        conta.compras.forEach(valor => {
+            compraTotal = compraTotal + valor 
+            
+        conta.saldoTotal = conta.saldoTotal - compraTotal       });
+
+    }
+    return contas
+  console.log(contas);
+}
+
+    
 
 }
 
@@ -162,5 +179,13 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
 
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
+    function dataInvertida(data){
+        const novaData = data.split("/").join("/")
+        return novaData
+
+    "2021/05/04"
+    }
+    
+    const data = new Date("2021/12/20").getTime
    
 }

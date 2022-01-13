@@ -8,39 +8,39 @@ const MainContainer = styled.div`
   flex-direction: column;
   align-items: center;
 `
+const peopleList = [ 
+        {
+        nomeUsuario:'Paulinha',
+        fotoUsuario:'https://picsum.photos/50/50',
+        fotoPost: 'https://picsum.photos/200/150'
+        },
+        {  
+        nomeUsuario:'Astrobot',
+        fotoUsuario:'https://picsum.photos/40/40',
+        fotoPost:'https://picsum.photos/190/140'
+        },
+        {
+        nomeUsuario:'Labetube',
+        fotoUsuario:'https://picsum.photos/30/30',
+        fotoPost:'https://picsum.photos/180/130'
+        }
+];   
 
 class App extends React.Component {
   render() {
     return (
-      <>
-      <MainContainer>
-        <Post
-          nomeUsuario={'Paulinha'}
-          fotoUsuario={'https://picsum.photos/50/50'}
-          fotoPost={'https://picsum.photos/200/150'}
-        />
-      </MainContainer>
-      <p/>
-      <MainContainer>
-        <Post
-          nomeUsuario={'Astrobot'}
-          fotoUsuario={'https://picsum.photos/40/40'}
-          fotoPost={'https://picsum.photos/190/140'}
-        />
-      </MainContainer>
-      <p/>
-
-      <MainContainer>
-        <Post
-          nomeUsuario={'Labetube'}
-          fotoUsuario={'https://picsum.photos/30/30'}
-          fotoPost={'https://picsum.photos/180/130'}
-        />
-      </MainContainer>
-      </>
-
+      <div>
+        {peopleList.map(element => {
+          return (
+            <MainContainer>
+              <Post fotoPost={element.fotoPost} fotoUsuario={element.fotoUsuario} nomeUsuario={element.nomeUsuario} />
+            </MainContainer>
+          )
+        })}
+      </div>
     );
-  }
+  };
+
 }
 
 export default App; 

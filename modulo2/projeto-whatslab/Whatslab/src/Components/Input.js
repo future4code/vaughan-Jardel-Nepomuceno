@@ -5,24 +5,20 @@ import styled from "styled-components";
 const InputBox = styled.div`
 display: flex;
 width:100%;
-// height:200px;
-border:1px solid red;
-align-items: flex-end;
+border:1px ;
 justify-content: space-around;
-padding:20px 5px;
+padding:10px 1px;
 position: absolute;
 bottom: 0;
 `
-
 const InputUser = styled.select`
 width:16%;
 height:
-font-size:1.0rem;
-padding: 4px 0;
+font-size
+4px 0;
 `
 const InputMessage = styled.input`
 width:80%;
-// height:100px;
 font-size:1.0rem;
 padding: 4px 0;
 `
@@ -30,7 +26,6 @@ padding: 4px 0;
 const ChatDiv= styled.div`
 word-wrap: break-word;
 border:0.5px solid gray;
-// width: 200px;
 border-radius: 10px;
 box-sizing:content-box;
 display: inline-block;
@@ -80,6 +75,7 @@ class Input extends React.Component{
                 <br/>
                 </>
                 )
+                
 
 
        })
@@ -87,20 +83,20 @@ class Input extends React.Component{
         return (
             <>   
 
-
-           {this.chatMessagem}
-
-
-
-          <InputBox>
-            {/* <InputUser  value={this.inputUser} onChange={this.onChangeInputUser}  /> */}
-             <InputUser name="select">
-                <option value="valor2" selected>Eu</option>
-            </InputUser>         
-
-            <InputMessage value={this.state.inputMessage}  onChange={this.onChangeInputMessage} />
+          {this.chatMessagem}
+             
+             <InputBox >
+            <InputUser name="select" type="text">
+             <option value="valor" selected>usuário</option>
+             
+            </InputUser> 
+                   
+<InputMessage value={this.state.inputMessage}  onChange={this.onChangeInputMessage} />
             <button onClick={this.onClickSend}>enviar</button>
+            
         </InputBox>
+
+       
        </>
        )
     }

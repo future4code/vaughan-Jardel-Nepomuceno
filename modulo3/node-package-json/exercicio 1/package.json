@@ -1,0 +1,19 @@
+{
+  "name": "package-json",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jardell13/labenu.git"
+  },
+  "author": "Jardel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jardell13/labenu/issues"
+  },
+  "homepage": "https://github.com/jardell13/labenu#readme"
+}

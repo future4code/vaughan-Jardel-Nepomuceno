@@ -14,10 +14,12 @@ meuNumero = 10, "oiii"
 
 //c
 
-const Person = {
-    nome: string ,
+type Person = {
+    nome: string 
     idade: number,
     corFavorita: string
 }
+
+
 
 

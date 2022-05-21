@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    
+}
+
+.linhaDeFilmes {
+    margin-bottom: 30px;
+}
+
+.linhaDeFilmes h2 {
+    margin:0px 0px 0px 30px;
+}
+
+.listaSecundaria {
+    overflow-x: hidden ;
+    padding-left: 30px;
+}
+
+.listaMovel{
+    width: 99999999px;
+}
+
+.listaItens{
+   display: inline-block;
+   width: 150px;
+}
+
+.listaItens img {
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+}
+
+.listaItens img:hover {
+    transform: scale(1.0);
+}

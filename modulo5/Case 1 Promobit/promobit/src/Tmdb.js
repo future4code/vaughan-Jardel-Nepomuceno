@@ -13,6 +13,20 @@ export default {
             slug: 'popular',
             title: 'Populares do Tmdb',
             items: await basicFetch (`/movie/popular?languege=pt-BR&api_key=${API_KEY}`)
-    }]
+            
+    },
+{
+     slug: 'originals',
+     title: 'Originais do Tmdb',
+     items: await basicFetch (`/discover/tv?with_network=213&languege=pt-BR&api_key=${API_KEY}`) 
+},
+{
+    slug: 'treding',
+    title: 'Recomendados para Você',
+    items: await basicFetch (`/trending/all/week?&languege=pt-BR&api_key=${API_KEY}`)
+
+}]
     }
 }
+
+ 
